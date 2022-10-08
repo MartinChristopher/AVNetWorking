@@ -1,0 +1,6 @@
+framework module AVNetWorking {
+  umbrella header "AVNetWorking-umbrella.h"
+
+  export *
+  module * { export * }
+}
