@@ -11,6 +11,7 @@
 typedef NS_ENUM(NSInteger, AVUploadType) {
     AVUploadTypeTxt, //文本
     AVUploadTypeImage, //图片
+    AVUploadTypeAudio, //音频
     AVUploadTypeVideo, //视频
 };
 

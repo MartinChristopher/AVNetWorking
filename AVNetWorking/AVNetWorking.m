@@ -612,6 +612,10 @@ static inline NSString *cachePath() {
                             fileName = [NSString stringWithFormat:@"%@.jpeg", timeStr];
                             [formData appendPartWithFileData:fileData name:formKeyName fileName:fileName mimeType:@"image/jpeg"];
                             break;
+                        case AVUploadTypeAudio:
+                            fileName = [NSString stringWithFormat:@"%@.mp3", timeStr];
+                            [formData appendPartWithFileData:fileData name:formKeyName fileName:fileName mimeType:@"audio/quicktime"];
+                            break;
                         case AVUploadTypeVideo:
                             fileName = [NSString stringWithFormat:@"%@.mp4", timeStr];
                             [formData appendPartWithFileData:fileData name:formKeyName fileName:fileName mimeType:@"video/quicktime"];
